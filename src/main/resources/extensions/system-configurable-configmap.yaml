@@ -1,0 +1,21 @@
+apiVersion: v1alpha1
+kind: "ConfigMap"
+metadata:
+  name: system-default
+data:
+  theme: |
+    {
+      "active": "default"
+    }
+  routeRules: |
+    {
+      "categories": "categories",
+      "archives": "archives",
+      "post": "/archives/{slug}",
+      "tags": "tags"
+    }
+  codeInjection: |
+    {
+     "globalHead": "",
+     "footer": ""
+    }
